@@ -9,11 +9,11 @@ import { DataServiceService } from 'src/app/services/data-service.service';
 import { GlobalDataSummary } from 'src/app/models/globalData';
 
 @Component({
-  selector: 'app-countries',
-  templateUrl: './countries.component.html',
-  styleUrls: ['./countries.component.css']
+  selector: 'app-district',
+  templateUrl: './district.component.html',
+  styleUrls: ['./district.component.css']
 })
-export class CountriesComponent implements OnInit {
+export class DistrictComponent implements OnInit {
   data: GlobalDataSummary[] = [];
   district: string[] = [];
 

@@ -15,10 +15,11 @@ import { RouterModule } from '@angular/router'; // Router to setup router outlet
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { AppRoutingModule } from './app-routing.module';
-import { CountriesComponent } from './components/countries/countries.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardCardComponent } from './components/dashboard-card/dashboard-card.component';
 import { GoogleChartsModule } from 'angular-google-charts';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { DistrictComponent } from './components/district/district.component';
 
 export function playerFactory() {
   return player;
@@ -29,8 +30,8 @@ export function playerFactory() {
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    CountriesComponent,
-    DashboardCardComponent
+    DashboardCardComponent,
+    DistrictComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +39,8 @@ export function playerFactory() {
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
-    GoogleChartsModule
+    GoogleChartsModule,
+    FlexLayoutModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
   providers: [],
